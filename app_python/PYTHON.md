@@ -3,7 +3,7 @@
 *FastAPI* ([official docs here](https://fastapi.tiangolo.com/features/)) will be used in this project for the following reasons:
 - Production ready
 - High performance
-- It meets the requirements for now
+- It meets the requirements for this project
 - Well documented
 - Easy integration with databases and frontends
 
