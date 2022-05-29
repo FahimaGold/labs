@@ -11,10 +11,10 @@
 
 The best practices recommended to structure a **Fastapi** project are:
 
-- Under the project name (in this example, it is 'app_python'), a subdirectory named 'core' is created.
-- The 'core' subdirectory contains another sub-directory 'models', and another one 'schemas' which contain database code, and schemas respectively.
-- Another subdirectory 'tests' under the project name, which contains the application tests.
-- Another folder 'v1' under the project directory, which contains the API endpoints and 'v1' indicates version 1 of the API.
+- Under the project name (in this example, it is `app_python`), a subdirectory named `core` is created.
+- The `core` subdirectory contains another sub-directory `models`, and another one `schemas` which contain database code, and schemas respectively.
+- Another subdirectory `tests` under the project name, which contains the application tests.
+- Another folder `v1` under the project directory, which contains the API endpoints and `v1` indicates version 1 of the API.
 
 The best practices recommended to structure a **Python** project are:
 
