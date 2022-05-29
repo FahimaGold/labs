@@ -1,6 +1,6 @@
 # Framework to be used in this project
 
-*FastAPI* [Find official docs here](https://fastapi.tiangolo.com/features/) will be used in this project for the following reasons:
+*FastAPI* ([official docs here](https://fastapi.tiangolo.com/features/)) will be used in this project for the following reasons:
 - Production ready
 - High performance
 - It meets the requirements for now
