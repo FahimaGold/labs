@@ -28,3 +28,16 @@ The best practices recommended to structure a **Python** project are:
 - Avoid importing all from packages as it pollutes the namespace
 - Avoid turning off error reporting during development
 - Avoid implementing best practices from other practices languages
+
+# Best practices of Unit Tests
+
+- Unit tests should be fast: It means that unit tests should run fast, as if they take too long to run, developers may not run them. In order to ensure that unit tests run fast, developers should make them as simple as possible, don't make them depend on other tests, and mock external dependencies.
+- Unit tests should be simple: This can be achieved by having low cyclomatic complexity (a metric that indicates the number of possible execution paths), the low it is, the easier it is to understand and maintain the code.
+- Unit tests should be readable: As they are part of the documentation. Also, if unit tests are unreadable, it makes it hard for developers to understand them and hence the risk of introducing bugs.
+- Unit tests should be deterministic: This means that the test behavior should remain the same as long as the code does not change. In other words, if the test passes once, it should always passes if the code does not change, no matter how many times the unit tests are run.
+- Unit tests should be isolated: That means that external dependencies should be mocked.
+- Unit tests should have a naming convention: Unit tests should have  convention naming where the test class should be named after the test under test, and test class name should follow CamelCase convention.
+- Unit tests should cover many tests cases: Including edge cases (not common inputs but they may cause problems).
+- Using tools to check coverage: In order to check how effective are the test cases.
+- Using fixtures: Fixtures are some tests setups and some other helpers which are shared among tests. Fixtures also offer the possiblity to parametrize tests (which means take on multiple values) and run every test once for each parameterized test.
+- When using pytest, prefer **mocker** over **mock**: As the mocker fixture reduces boilplate, and it also eliminates the chance of flacky test due to mock leak when a test does not reset a patch. 

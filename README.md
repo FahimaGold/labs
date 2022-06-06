@@ -14,3 +14,10 @@ From your parent directory of the `app_python`, run the following command to lau
 
 Unit test is implemented for this app. It is under the `tests/` folder. In order to run it, from your parent directory, run:
 `python3 -m unittest app_python/tests/current_time_test.py`
+
+# Docker
+
+This app can also be run in a docker container. In order to run it locally, run the following command: 
+`docker run -d --name container_name -p 80:80 image_name`.
+
+In order to run it from a web service such as [labs play with docker](https://docs.docker.com/get-started/04_sharing_app/), use the image from docker hub `fahima2019/lab2:lab2`, you can then run it by : `docker run -d -p 80:80 --name container fahima2019/lab2:lab2`.

@@ -1,0 +1,9 @@
+# Git Actions best practices
+
+- Don't install dependencies unnecessarily: This is by taking advantage of github caching whenever you can
+- Never hardcode secrets: You can simply take of the advanatge of storing your secrets in the settings of your repository, and then provide them as inputs to your actions.
+- Limit environment variables to the narrowest possible scope: That means for instance, to set an environment variable at the job level so that levels above that, will not be able to access that variable. In the case an environment variable is accessed from several levels, its value will be overriden by variables with a tighter scope.
+- Ensure every repository has a CI/CD workflow: If you are relying on github actions as your CI/CD and want to ensure that all your repositories have CI/CD, you can use tools such as `Datree` to enforce each repository to have a `.github/workflows` folder.
+- Store actions authors metadata: In order to know who's the author who wrote a given action and so that developers who have questions will know to whom they should ask about a given action.
+- Don't use self-hosted runners in a public repository: As when you are working on a public action, someone else could fork it and makes a pull request that contains a malicious workflow. The malicious code will run on your own host machine, and can easily escape its sandbox, and possibly cause several harms.
+- Leverage Github Actions Marketplace: It is a reference library that contains common elements in other pipeline,where third-party vendors (such as Microsoft, AWS, and Google) publish their own code examples, which will high probably meet your needs.
