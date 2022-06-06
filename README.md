@@ -23,3 +23,5 @@ This app can also be run in a docker container. In order to run it locally, run 
 In order to run it from a web service such as [labs play with docker](https://docs.docker.com/get-started/04_sharing_app/), use the image from docker hub `fahima2019/lab2:lab2`, you can then run it by : `docker run -d -p 80:80 --name container fahima2019/lab2:lab2`.
 
 # Github actions
+
+Github Actions are used as CI/CD pipelines. the yaml file is located under `.github/workflows`. The `CI` workflow will install python dependencies, check python source file using `black` linter, test python files using `pytest`, and finally builds and pushes a docker image to the docker hub repository. Github caching is used in order to optimize uncessary installation of dependencies.
