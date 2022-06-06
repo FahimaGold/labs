@@ -1,6 +1,6 @@
 #main.yml
 #This workflow will install Python dependencies, lint using Black, run tests using Pytest 
-#and Deploy the FastAPI app to Heroku
+#and building and pushing docker image
 name: fastapi-github-actions-test
 
 on: 
@@ -50,4 +50,8 @@ jobs:
         tags: lab2
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        password: ${{ secrets.DOCKER_PASSWORD }}      
+  assign-author:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: toshimaru/auto-author-assign@v1.4.0
