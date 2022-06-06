@@ -1,6 +1,6 @@
 #main.yml
 #This workflow will install Python dependencies, lint using Black, run tests using Pytest 
-#and building and pushing docker image
+#and building image docker
 name: fastapi-github-actions-test
 
 on: 
@@ -36,8 +36,8 @@ jobs:
     - name: Lint with black
       run: |
         # Code formatting with black, check every python file in the src directory 
-        black app_python
-        black --check app_python
+        black src
+        black --check src
     # Task for testing with pytest
     - name: Test with pytest
       run: |
@@ -50,4 +50,4 @@ jobs:
         tags: lab2
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}   
+        password: ${{ secrets.DOCKER_PASSWORD }}
