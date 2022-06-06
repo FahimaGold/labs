@@ -41,3 +41,4 @@ The best practices recommended to structure a **Python** project are:
 - Using tools to check coverage: In order to check how effective are the test cases.
 - Using fixtures: Fixtures are some tests setups and some other helpers which are shared among tests. Fixtures also offer the possiblity to parametrize tests (which means take on multiple values) and run every test once for each parameterized test.
 - When using pytest, prefer **mocker** over **mock**: As the mocker fixture reduces boilplate, and it also eliminates the chance of flacky test due to mock leak when a test does not reset a patch. 
+- Functions under test should start with "test": If the funciton does not start with "test", 'pytest' will not recognize it.

@@ -1,6 +1,6 @@
 #main.yml
 #This workflow will install Python dependencies, lint using Black, run tests using Pytest 
-#and Deploy the FastAPI app to Heroku
+#and building image docker
 name: fastapi-github-actions-test
 
 on: 
@@ -21,9 +21,9 @@ jobs:
 
     #Task for setting up Python 3.10 using actions/setup-python@v2 Github action
     - name: Set up Python 3.10
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v3
       with:
-        python-version: 3.10 # Modify python version HERE
+        python-version: '3.10' # Modify python version HERE
         cache: 'pip'
 
     #Task for installing dependencies, multi-line command
@@ -41,7 +41,7 @@ jobs:
     # Task for testing with pytest
     - name: Test with pytest
       run: |
-        pytest
+        export PYTHONPATH=$(pwd) && pytest
     # Building and pushing docker image
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v5
