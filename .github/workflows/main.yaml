@@ -41,7 +41,7 @@ jobs:
     # Task for testing with pytest
     - name: Test with pytest
       run: |
-        pytest
+        export PYTHONPATH=$(pwd) && pytest
     # Building and pushing docker image
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v5

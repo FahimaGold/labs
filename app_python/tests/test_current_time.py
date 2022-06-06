@@ -1,6 +1,6 @@
 import unittest
 from datetime import datetime
-from ..current_time import get_current_time
+from app_python.current_time import get_current_time
 import pytz
 
 class CurrentTimeTest(unittest.TestCase):
