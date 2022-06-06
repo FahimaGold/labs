@@ -20,10 +20,10 @@ jobs:
         git fetch --prune --unshallow  
 
     #Task for setting up Python 3.10 using actions/setup-python@v2 Github action
-    - name: Set up Python '3.10'
-      uses: actions/setup-python@v2
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
       with:
-        python-version: 3.10 # Modify python version HERE
+        python-version: '3.10' # Modify python version HERE
         cache: 'pip'
 
     #Task for installing dependencies, multi-line command
