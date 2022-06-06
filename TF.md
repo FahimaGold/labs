@@ -6,7 +6,7 @@
 - Using one state per environment
 - Configuring a backend
 - Keeping backends small
-
+- Not commiting the `.tfstate` file
 # Screenshots of VMs
 
 ![vagrant status](./images/vagrant_status.png)
