@@ -51,5 +51,3 @@ jobs:
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}   
-    - name: Assigning author
-      uses: toshimaru/auto-author-assign@v1.4.0
