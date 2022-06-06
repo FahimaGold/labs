@@ -13,7 +13,7 @@ From your parent directory of the `app_python`, run the following command to lau
 # Testing the app
 
 Unit test is implemented for this app. It is under the `tests/` folder. In order to run it, from your parent directory, run:
-`python3 -m unittest app_python/tests/current_time_test.py`
+`python3 -m pytest app_python/tests`
 
 # Docker
 
