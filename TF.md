@@ -11,3 +11,8 @@
 
 ![vagrant status](./images/vagrant_status.png)
 ![screenshots from VirtualBox](./images/vms_from_virtualbox.png)
+![AZ VM 1](./images/AZ_VM_1.png)
+![AZ VM 2](./images/AZ_VM_2.png)
+![AZ VM 3](./images/AZ_VM_3.png)
+![AZ VM 4](./images/AZ_VM_4.png)
+![AZ VM Poral](./images/AZ_VM_PORTAL.png)
