@@ -7,3 +7,5 @@ In order to run the playbook, run the command: `ansible-playbook playbooks/docke
 ![Ansible 1](../images/Ansible_1.png)
 ![Ansible 2](../images/Ansible_2.png)
 ![Ansible 3](../images/Ansible_3.png)
+![Ansible 4](../images/docker_deploy.png)
+![Ansible 5](../images/docker_deployed.png)
