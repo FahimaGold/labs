@@ -1,0 +1,991 @@
+Common labels: {"job":"containerlogs","stream":"stderr"}
+Line limit: 1000
+Total bytes processed: "624  kB"
+
+
+2022-06-19T22:41:40+03:00	INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+
+2022-06-19T22:41:40+03:00	INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.698904148Z caller=metrics.go:122 component=frontend org_id=fake latency=fast query="sum by (level) (count_over_time({job=\"containerlogs\"} |= `Uvicorn`[1m]))" query_type=metric range_type=range length=1h0m0s step=1m0s duration=136.839145ms status=200 limit=1000 returned_lines=0 throughput=4.2MB total_bytes=569kB queue_time=2.133485922s subqueries=3 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.69825574Z caller=metrics.go:122 component=frontend org_id=fake latency=fast query="{job=\"containerlogs\"} |= `Uvicorn`" query_type=filter range_type=range length=1h0m0s step=2s duration=134.685329ms status=200 limit=1000 returned_lines=395 throughput=4.2MB total_bytes=569kB queue_time=2.061243212s subqueries=3
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.695764238Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=6.650179ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=86.897322ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.69275124Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m26.481s step=2s duration=7.388635ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=88.683061ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.691962972Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m26.481s step=2s duration=4.852836ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=83.839259ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.690811204Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=4.014901ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=85.079241ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.690288037Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m26.481s step=2s duration=4.502527ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=84.192623ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.690101916Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m26.481s step=2s duration=4.274676ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=91.013145ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.689843171Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m26.481s step=2s duration=4.059588ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=90.95492ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.689867983Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m26.481s step=2s duration=3.327946ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=90.713548ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.689736316Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m26.481s step=2s duration=4.290242ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=88.915947ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.687394614Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m26.481s step=2s duration=3.288345ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=89.260691ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.686552276Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m26.481s step=2s duration=2.335105ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=89.630037ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.684072356Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m26.481s step=2s duration=23.051091ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=77.49179ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.681579137Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=19.93132ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=74.047969ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.680874602Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=12.943181ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=69.615989ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.679727612Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=18.361309ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=78.445311ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.679563347Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=19.573654ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=76.985671ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.679498889Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m26.481s step=2s duration=18.5564ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=74.441281ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.67449857Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=7.90794ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=75.532514ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.671830708Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=10.133948ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=79.309998ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.669536307Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=8.363753ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=77.981423ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.668709712Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m26.481s step=2s duration=9.503789ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=77.105267ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.645838188Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=1.306345ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=71.068901ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.656247958Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m26.481s step=2s duration=1.621493ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=75.393932ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.653462128Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m26.481s step=2s duration=8.641054ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=67.426183ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.645566013Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=1.580954ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=70.473444ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.644508187Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=1.320904ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=67.567123ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.644235393Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=4.176392ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=66.25758ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.643854129Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=3.750672ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=67.029691ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.638725363Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=10.732796ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=58.0499ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.645779585Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m26.481s step=2s duration=1.284349ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=67.323028ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.641778164Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=4.987344ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=65.99991ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.639792119Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=4.841901ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=67.217332ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.639721651Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=2.989162ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=66.170597ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.638695865Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.474825ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=66.434978ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.637827151Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=2.055851ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=67.157101ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.635169304Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=7.278893ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=58.737237ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.635162077Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=7.819234ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=58.095548ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.634011837Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=5.682959ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=58.643924ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.630553007Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=3.40336ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=58.764138ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.629480052Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=5.651931ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=56.513122ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.630048273Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=2.696361ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=58.717767ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.629251934Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=3.928241ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=57.095617ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.628121377Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=4.810324ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=51.928648ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.625960569Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=7.063651ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=51.160191ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.623579814Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m33.519s step=2s duration=17.046038ms status=200 limit=1000 returned_lines=98 throughput=26MB total_bytes=440kB queue_time=39.240314ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.62036183Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m33.519s step=2s duration=14.055141ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=39.259753ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.61917469Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=4.553995ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=45.475639ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.618173535Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m33.519s step=2s duration=12.304185ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=36.58271ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.615714789Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=10.044075ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=36.501572ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.614089924Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=3.955354ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=41.60047ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.612803696Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=8.029868ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=36.642018ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.612493095Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m33.519s step=2s duration=7.275065ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=36.635047ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.612338006Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=3.093722ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=41.457852ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.610299163Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=3.2168ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=39.254132ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.608166883Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=3.513598ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=36.646173ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.606918801Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m33.519s step=2s duration=2.276341ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=36.652869ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.606223638Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m33.519s step=2s duration=1.91162ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=36.516485ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.602925891Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=1.361965ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=34.981478ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.601978925Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m33.519s step=2s duration=5.057923ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=28.275089ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.601948356Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=6.884205ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=28.195467ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.599356168Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=6.90973ms status=200 limit=1000 returned_lines=0 throughput=64MB total_bytes=440kB queue_time=21.217849ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.598639727Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=6.636078ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=24.481997ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.598073655Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=3.466878ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=28.207683ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.598146595Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=6.715067ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=24.504832ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.597854458Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=3.536019ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=28.117505ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.597048905Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m33.519s step=2s duration=3.982478ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=24.491638ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.596057545Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m33.519s step=2s duration=1.47945ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=28.191725ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.595760284Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=7.424689ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=20.890797ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.590400608Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=7.300748ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=16.153007ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.590084957Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.522516ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=21.473355ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.58919392Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m33.519s step=2s duration=5.924581ms status=200 limit=1000 returned_lines=1 throughput=2.0MB total_bytes=12kB queue_time=16.188805ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.588141866Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m33.519s step=2s duration=5.236874ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=17.084143ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.587745753Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m33.519s step=2s duration=4.748236ms status=200 limit=1000 returned_lines=1 throughput=93kB total_bytes=442B queue_time=17.231852ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.587561122Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m33.519s step=2s duration=7.218282ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=13.465843ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.587323527Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=6.110831ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=14.45387ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.586162599Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=5.969178ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=13.307673ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.585383694Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m33.519s step=2s duration=6.099697ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=13.334229ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.585242902Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=4.172291ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=13.341187ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.583955383Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=18.633554ms status=200 limit=1000 returned_lines=0 throughput=6.2MB total_bytes=116kB queue_time=74.796µs subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.578120863Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=12.543974ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=83.796µs subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.578065363Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=4.324563ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=8.386615ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.577681127Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=6.086681ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=6.800975ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.577538345Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=5.90249ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=6.88146ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.577367956Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m33.519s step=2s duration=3.989231ms status=200 limit=1000 returned_lines=294 throughput=29MB total_bytes=116kB queue_time=8.174901ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.576317832Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m26.481s step=2s duration=3.323197ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=7.740731ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.576203999Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m33.519s step=2s duration=3.778127ms status=200 limit=1000 returned_lines=1 throughput=82kB total_bytes=308B queue_time=7.347442ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.576099181Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=3.439857ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=7.468661ms subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.575894277Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=2.59268ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=7.876523ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.572157095Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=6.492596ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=61.674µs subqueries=1
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.571433439Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=6.062186ms status=200 limit=1000 returned_lines=0 throughput=73kB total_bytes=442B queue_time=68.986µs subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.57009851Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=5.460029ms status=200 limit=1000 returned_lines=0 throughput=2.1MB total_bytes=12kB queue_time=44.375µs subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.56967566Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=5.062698ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=56.003µs subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.568392359Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=3.365355ms status=200 limit=1000 returned_lines=0 throughput=92kB total_bytes=308B queue_time=75.458µs subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.568170599Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=2.185373ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=56.707µs subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.567401642Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=2.342734ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=23.197µs subqueries=1 source=logvolhist
+
+2022-06-19T22:46:33+03:00	level=info ts=2022-06-19T19:46:33.567142748Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=2.897966ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=88.893µs subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.964401728Z caller=metrics.go:122 component=frontend org_id=fake latency=fast query="sum by (level) (count_over_time({job=\"containerlogs\"} |= `Uvicorn`[1m]))" query_type=metric range_type=range length=1h0m0s step=1m0s duration=87.800553ms status=200 limit=1000 returned_lines=0 throughput=6.1MB total_bytes=533kB queue_time=1.281259856s subqueries=3 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.964132427Z caller=metrics.go:122 component=frontend org_id=fake latency=fast query="{job=\"containerlogs\"} |= `Uvicorn`" query_type=filter range_type=range length=1h0m0s step=2s duration=82.947811ms status=200 limit=1000 returned_lines=297 throughput=6.4MB total_bytes=533kB queue_time=1.092523796s subqueries=3
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.963004972Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=2.486757ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=55.308778ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.962761744Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=2.970673ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=53.578715ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.962533362Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=2.051544ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=58.032228ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.960976392Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=2.517428ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=56.696438ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.958652304Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=2.423156ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=55.63364ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.958573554Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=14.319366ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=41.432272ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.957985033Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m39.176s step=2s duration=22.556311ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=43.304577ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.957882063Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m39.176s step=2s duration=21.277866ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=40.667807ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.957099336Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=7.712946ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=41.322458ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.956342576Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=10.869594ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=41.845482ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.946412163Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=11.087401ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=40.132877ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.94531568Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m39.176s step=2s duration=9.791096ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=42.946349ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.944234311Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m39.176s step=2s duration=8.461211ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=41.909209ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.943096906Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m39.176s step=2s duration=7.528542ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=43.219596ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.942052784Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=5.742783ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=41.028684ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.934848509Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=4.030264ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=39.781185ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.935130967Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=4.232082ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=39.877281ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.934816551Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m39.176s step=2s duration=3.168387ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=42.085582ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.934279896Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m39.176s step=2s duration=3.115982ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=40.448181ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.93366476Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m39.176s step=2s duration=2.481329ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=42.090388ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.933436256Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m39.176s step=2s duration=4.236225ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=42.971655ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.933162847Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m39.176s step=2s duration=3.689648ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=42.867434ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.93291342Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m39.176s step=2s duration=3.833863ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=42.335835ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.932628719Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m39.176s step=2s duration=2.713665ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=39.171415ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.932331805Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=892.743µs status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=42.084767ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.929165707Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.248025ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=41.83908ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.928030905Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=8.546147ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=35.974886ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.927178952Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=3.884369ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=38.349828ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.926844379Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=6.725639ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=34.597718ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.926800284Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=6.936093ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=35.986466ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.926397841Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m39.176s step=2s duration=2.97634ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=38.38049ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.925947224Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=6.814193ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=35.91972ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.925505989Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=5.771135ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=35.981897ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.9249027Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m39.176s step=2s duration=2.108286ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=38.353814ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.923305896Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=931.805µs status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=37.896817ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.922467503Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.278355ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=34.930415ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.921206511Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m39.176s step=2s duration=544.041µs status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=36.345336ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.921620473Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.452991ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=34.590592ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.92129282Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.480002ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=34.560509ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.921108756Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=547.21µs status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=34.565331ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.917475916Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=3.199215ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=31.496233ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.917144836Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=1.374204ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=27.197425ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.91511679Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=2.030699ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=28.991398ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.91508453Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=5.468172ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=23.677393ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.914447923Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=6.140884ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=23.677276ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.914289371Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=6.825714ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=23.722732ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.91390411Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=4.783236ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=23.946332ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.913795326Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=7.802377ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=23.716149ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.913548581Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=7.479979ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=23.694428ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.912198692Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=1.782622ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=23.707962ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.911725632Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=6.884323ms status=200 limit=1000 returned_lines=0 throughput=64MB total_bytes=440kB queue_time=22.323222ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.909286364Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=3.964573ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=22.215825ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.905197566Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=2.043156ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=20.786692ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.90492515Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.283648ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=20.605257ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.903540375Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=2.56881ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=18.827775ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.903430511Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m20.824s step=2s duration=2.270589ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=18.908346ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.903343458Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=2.224162ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=18.646044ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.903213583Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.388862ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=18.649194ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.903124435Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.956639ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=18.765172ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.902925676Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=1.658621ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=18.720035ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.902598264Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=1.268469ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=18.702522ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.902304273Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=1.301299ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=18.757833ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.900249468Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=4.9593ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=14.007117ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.899897854Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=3.064117ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=13.948598ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.898836978Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=3.997284ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=12.853627ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.898925994Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=4.408932ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=12.855449ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.898806823Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=3.449403ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=13.955981ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.898358894Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=2.225998ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=13.029081ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.89806045Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=3.494997ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=13.845084ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.897873121Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m20.824s step=2s duration=2.253412ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=13.920033ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.897387863Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m20.824s step=2s duration=2.586394ms status=200 limit=1000 returned_lines=98 throughput=170MB total_bytes=440kB queue_time=13.818599ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.896961893Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=2.342927ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=13.305143ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.893046437Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=7.1093ms status=200 limit=1000 returned_lines=0 throughput=47kB total_bytes=332B queue_time=7.049172ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.893477737Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=4.428234ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=9.872395ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.892992747Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.819348ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=9.46827ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.891672907Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m20.824s step=2s duration=990.945µs status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=9.845586ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.890519189Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m20.824s step=2s duration=4.461955ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=6.897567ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.890100265Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m20.824s step=2s duration=4.157306ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=6.220256ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.889433269Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m20.824s step=2s duration=3.521923ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=6.932853ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.888579765Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=2.376655ms status=200 limit=1000 returned_lines=0 throughput=4.9MB total_bytes=12kB queue_time=7.098637ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.888652229Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m20.824s step=2s duration=1.545855ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=7.46529ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.887527695Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=2.453694ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=4.14551ms subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.886262412Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m20.824s step=2s duration=2.435415ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=4.620625ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.884629294Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m20.824s step=2s duration=1.184468ms status=200 limit=1000 returned_lines=1 throughput=280kB total_bytes=332B queue_time=3.978246ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.883741842Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=4.814396ms status=200 limit=1000 returned_lines=0 throughput=17MB total_bytes=80kB queue_time=66.791µs subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.883443348Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m39.176s step=2s duration=2.350345ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=2.465958ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.88342035Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m20.824s step=2s duration=4.936519ms status=200 limit=1000 returned_lines=1 throughput=2.4MB total_bytes=12kB queue_time=75.038µs subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.882992069Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m20.824s step=2s duration=4.788545ms status=200 limit=1000 returned_lines=196 throughput=17MB total_bytes=80kB queue_time=31.212µs subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.882777729Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=4.273137ms status=200 limit=1000 returned_lines=0 throughput=72kB total_bytes=308B queue_time=30.75µs subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.882688297Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m20.824s step=2s duration=1.219918ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=2.866739ms subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.882307456Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m20.824s step=2s duration=3.278848ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=90.219µs subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.881915116Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=3.55277ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=29.88µs subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.881222026Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m20.824s step=2s duration=2.854908ms status=200 limit=1000 returned_lines=1 throughput=108kB total_bytes=308B queue_time=33.532µs subqueries=1
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.880894559Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=2.112457ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=75.467µs subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.880111181Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.353034ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=54.932µs subqueries=1 source=logvolhist
+
+2022-06-19T22:46:21+03:00	level=info ts=2022-06-19T19:46:20.879271005Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m20.824s step=2s duration=687.93µs status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=49.05µs subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.12671401Z caller=metrics.go:122 component=frontend org_id=fake latency=fast query="sum by (level) (count_over_time({job=\"containerlogs\"} |= `Uvicorn`[1m]))" query_type=metric range_type=range length=1h0m0s step=1m0s duration=157.696118ms status=200 limit=1000 returned_lines=0 throughput=3.1MB total_bytes=496kB queue_time=1.566654084s subqueries=3 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.116897989Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=16m0s step=1m0s duration=3.097809ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=75.938348ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.123625861Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=16m0s step=1m0s duration=47.20302ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=73.723195ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.122287215Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=16m0s step=1m0s duration=46.37673ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=73.979429ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.120336317Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=16m0s step=1m0s duration=45.125587ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=71.532702ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.119986543Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=16m0s step=1m0s duration=46.365187ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=71.729931ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.119094534Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=16m0s step=1m0s duration=43.071362ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=71.528355ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.078117379Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=16m0s step=1m0s duration=1.442797ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=74.010195ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.074930749Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=16m0s step=1m0s duration=3.228151ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=71.993423ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.072028075Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=16m0s step=1m0s duration=860.833µs status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=77.835329ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.070730767Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=16m0s step=1m0s duration=5.693963ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=27.257729ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.068635664Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=16m0s step=1m0s duration=3.346243ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=69.258292ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.067479135Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=16m0s step=1m0s duration=5.044473ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=69.182843ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.06726258Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=16m0s step=1m0s duration=6.439166ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=27.307115ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.067021851Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=16m0s step=1m0s duration=8.060817ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=28.311311ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.062299213Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=45.122139ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=29.295244ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.060936748Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=42.94738ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=29.256679ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.060998118Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=47.572739ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=22.617943ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.060618156Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=16m0s step=1m0s duration=42.542561ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=27.297228ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.015419835Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=11.520788ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=24.343858ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.014422017Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=11.811122ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=24.180905ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.012614257Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=9.078232ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=24.173129ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.007157719Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=4.254408ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=24.177254ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.010845019Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=5.664378ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=26.876529ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.009895594Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=5.195168ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=26.915515ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.006326333Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=2.042873ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=24.285783ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.005493138Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.342039ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=24.018843ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.003501324Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.92917ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=24.021224ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.002923191Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=16m0s step=1m0s duration=1.179884ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=24.011771ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.001407298Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.51453ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=23.30267ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:18.000328984Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=4.750901ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=19.013203ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.999412219Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=5.003262ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=18.00876ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.999256824Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=14m0s step=1m0s duration=5.440892ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=17.009275ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.999134027Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=14m0s step=1m0s duration=4.109097ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=17.997283ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.999039621Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=14m0s step=1m0s duration=3.707371ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=15.941759ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.998923093Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=14m0s step=1m0s duration=3.459154ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=15.938049ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.99886552Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=14m0s step=1m0s duration=3.765575ms status=200 limit=1000 returned_lines=0 throughput=117MB total_bytes=440kB queue_time=16.106434ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.998834057Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=14m0s step=1m0s duration=4.528577ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=17.006392ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.998725202Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=14m0s step=1m0s duration=4.793425ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=15.708449ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.998520086Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=14m0s step=1m0s duration=5.466191ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=17.010037ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.994197904Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=14m0s step=1m0s duration=1.205602ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=16.988201ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.993201577Z caller=metrics.go:122 component=frontend org_id=fake latency=fast query="{job=\"containerlogs\"} |= `Uvicorn`" query_type=filter range_type=range length=1h0m0s step=2s duration=38.348753ms status=200 limit=1000 returned_lines=199 throughput=13MB total_bytes=496kB queue_time=434.20776ms subqueries=3
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.992301222Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=14m0s step=1m0s duration=2.640353ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=15.587243ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.990627963Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=14m0s step=1m0s duration=1.846457ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=16.322929ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.990121914Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=14m0s step=1m0s duration=782.886µs status=200 limit=1000 returned_lines=0 throughput=56MB total_bytes=44kB queue_time=16.263188ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.989032865Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m42.075s step=2s duration=3.252518ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=17.810651ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.988940946Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m42.075s step=2s duration=3.481536ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=17.812095ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.988732704Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=14m0s step=1m0s duration=3.488413ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=13.652032ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.988449578Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=14m0s step=1m0s duration=881.545µs status=200 limit=1000 returned_lines=0 throughput=377kB total_bytes=332B queue_time=15.107688ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.988355678Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m17.925s step=2s duration=3.212807ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=19.939689ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.98792163Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=14m0s step=1m0s duration=3.15261ms status=200 limit=1000 returned_lines=0 throughput=3.7MB total_bytes=12kB queue_time=12.648128ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.987509075Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.587346ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=13.387417ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.987221678Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=14m0s step=1m0s duration=2.398936ms status=200 limit=1000 returned_lines=0 throughput=128kB total_bytes=308B queue_time=14.594848ms subqueries=1 source=logvolhist
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.986813006Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m42.075s step=2s duration=1.929285ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=17.904384ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.986639567Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m42.075s step=2s duration=1.389148ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=17.814302ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.986011025Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m42.075s step=2s duration=879.289µs status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=22.419518ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.984395573Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m17.925s step=2s duration=1.037519ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=21.904743ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.981560786Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=7.799182ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=12.743923ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.982687644Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m17.925s step=2s duration=4.38119ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=16.798669ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.982688661Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m42.075s step=2s duration=7.637018ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=14.298441ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.982564079Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m42.075s step=2s duration=4.506476ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=16.574465ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.982392297Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=7.235464ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=13.557125ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.982390837Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m42.075s step=2s duration=5.782817ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=15.453385ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.982085793Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m17.925s step=2s duration=4.685519ms status=200 limit=1000 returned_lines=98 throughput=94MB total_bytes=440kB queue_time=16.280332ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.982003456Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m42.075s step=2s duration=6.310272ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=14.889228ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.981562339Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m17.925s step=2s duration=5.547113ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=14.925304ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.981039413Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m42.075s step=2s duration=3.82656ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=16.361237ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.974757518Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m42.075s step=2s duration=3.648338ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=10.713353ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.97360612Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=3.798801ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=8.835269ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.973213065Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m17.925s step=2s duration=3.519006ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=8.631418ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.972980648Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m42.075s step=2s duration=5.537932ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=9.944278ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.972862155Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=3.462211ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=8.82046ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.972379526Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m17.925s step=2s duration=4.424214ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=9.92814ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.972144864Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=5.901734ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=7.528715ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.971526654Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m42.075s step=2s duration=2.235502ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=8.062214ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.970948999Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m42.075s step=2s duration=1.910383ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=8.826356ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.969866226Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m17.925s step=2s duration=1.67484ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=9.688031ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.964766785Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.757422ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=4.784487ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.963286259Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=1.436986ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=4.926769ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.965918018Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m17.925s step=2s duration=4.86531ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=4.993818ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.965712104Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m42.075s step=2s duration=3.868348ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=5.763472ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.965036603Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=16m42.075s step=2s duration=1.063639ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=4.898402ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.964716849Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m17.925s step=2s duration=2.980504ms status=200 limit=1000 returned_lines=1 throughput=3.9MB total_bytes=12kB queue_time=4.925624ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.964048518Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m17.925s step=2s duration=2.570515ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=5.247978ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.96401391Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.409014ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=4.871094ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.963702266Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m17.925s step=2s duration=1.797702ms status=200 limit=1000 returned_lines=1 throughput=185kB total_bytes=332B queue_time=4.926223ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.963294241Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=1.956275ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=4.925929ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.961193562Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=533.864µs status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=4.885989ms subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.959450579Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.228852ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=43.384µs subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.959176162Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.017517ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=103.615µs subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.957603322Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m17.925s step=2s duration=2.652358ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=26.848µs subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.957288738Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.799868ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=14.503µs subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.958679863Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=1.850024ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=38.472µs subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.958527949Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m17.925s step=2s duration=2.519695ms status=200 limit=1000 returned_lines=98 throughput=18MB total_bytes=44kB queue_time=142.222µs subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.958316305Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m17.925s step=2s duration=3.514043ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=15.053µs subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.957186994Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=1.320377ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=20.894µs subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.957949022Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.643263ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=64.451µs subqueries=1
+
+2022-06-19T22:43:18+03:00	level=info ts=2022-06-19T19:43:17.957120948Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=13m17.925s step=2s duration=2.021094ms status=200 limit=1000 returned_lines=1 throughput=152kB total_bytes=308B queue_time=122.812µs subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.194882443Z caller=metrics.go:122 component=frontend org_id=fake latency=fast query="sum by (level) (count_over_time({job=\"containerlogs\"} |= `Uvicorn`[1m]))" query_type=metric range_type=range length=1h0m0s step=1m0s duration=125.11699ms status=200 limit=1000 returned_lines=0 throughput=3.6MB total_bytes=452kB queue_time=1.534199928s subqueries=3 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.185501232Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=17.759124ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=60.281873ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.179713559Z caller=metrics.go:122 component=frontend org_id=fake latency=fast query="{job=\"containerlogs\"} |= `Uvicorn`" query_type=filter range_type=range length=1h0m0s step=2s duration=102.92179ms status=200 limit=1000 returned_lines=101 throughput=4.4MB total_bytes=452kB queue_time=733.347769ms subqueries=3
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.173654038Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=5.575529ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=58.024557ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.172025625Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=4.779985ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=60.553638ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.171681413Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=5.74501ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=64.738506ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.171529248Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=4.694271ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=61.905321ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.171286308Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=2.911415ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=57.949074ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.170979902Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=4.419694ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=61.035135ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.167990093Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=2.384414ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=57.946881ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.16765937Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=2.149377ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=53.873213ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.163936338Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=6.730265ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=53.990425ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.162790355Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=14.92537ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=45.559172ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.161113841Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=8.177464ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=48.707826ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.160899733Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=13.937158ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=45.440203ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.157298755Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=6.778094ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=46.1305ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.155293342Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=12m43.019s step=2s duration=16.589008ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=47.059381ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.154699964Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=16.794036ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=37.087216ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.154362342Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=12m43.019s step=2s duration=18.756191ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=47.132017ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.151410138Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=16.28089ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=37.447902ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.147015893Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=12m43.019s step=2s duration=8.085947ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=47.026159ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.138780084Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=6.056815ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=43.404232ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.136313667Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=17m16.981s step=2s duration=7.518236ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=41.610192ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.136552141Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=12m43.019s step=2s duration=4.732082ms status=200 limit=1000 returned_lines=98 throughput=93MB total_bytes=440kB queue_time=44.206853ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.135656622Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=12m43.019s step=2s duration=3.202206ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=43.353368ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.135555737Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=3.793199ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=41.530194ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.133115268Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=12m43.019s step=2s duration=807.234µs status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=42.689665ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.130778402Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=12m43.019s step=2s duration=2.504266ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=41.742817ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.130175601Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=17m16.981s step=2s duration=5.542561ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=36.053036ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.129862925Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=10.620694ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=32.135961ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.129284985Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=12m43.019s step=2s duration=2.412882ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=40.339986ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.128195025Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=3.097201ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=36.515894ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.127409107Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=14.764894ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=26.181929ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.124346424Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=17m16.981s step=2s duration=4.899323ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=32.161988ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.123925702Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=11.61617ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=26.156352ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.12390012Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=3.491428ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=32.19697ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.122908376Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=4.843454ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=32.217757ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.122627679Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=10.753944ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=26.231644ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.121673313Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=3.258749ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=32.528153ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.119161202Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=12m43.019s step=2s duration=14.043771ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=24.566071ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.118715568Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=13.797229ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=25.331483ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.112980136Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.600511ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=26.191828ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.112950978Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=2.043643ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=25.806793ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.112874528Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=6.827241ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=24.757777ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.112837718Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.542575ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=26.691489ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.112588216Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=6.94318ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=24.713532ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.109550098Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=17m0s step=1m0s duration=3.827821ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=24.907963ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.105079244Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=3.423456ms status=200 limit=1000 returned_lines=0 throughput=128MB total_bytes=440kB queue_time=22.298983ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.104446205Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=3.346137ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=22.335423ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.104426694Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=17m16.981s step=2s duration=3.111188ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=22.044453ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.10422411Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=3.448575ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=21.739135ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.1038882Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.796024ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=21.797763ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.103050866Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=2.530571ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=21.719971ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.103096046Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=2.922032ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=21.431733ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.10265043Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=1.802466ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=21.75379ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.101734007Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=1.97948ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=20.232777ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.101520939Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=1.166577ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=21.765116ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.098984398Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=965.938µs status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=19.117765ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.098691142Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=11.499866ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=8.767808ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.0984722Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=5.328651ms status=200 limit=1000 returned_lines=0 throughput=62kB total_bytes=332B queue_time=14.890338ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.098265444Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=8.759977ms status=200 limit=1000 returned_lines=0 throughput=1.3MB total_bytes=12kB queue_time=11.173873ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.097996223Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=9.358486ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=8.053371ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.097652975Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=12m43.019s step=2s duration=9.080522ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=8.015401ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.097354081Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=17m16.981s step=2s duration=8.868133ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=8.009219ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.096942148Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=7.456992ms status=200 limit=1000 returned_lines=0 throughput=41kB total_bytes=308B queue_time=8.478686ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.096817974Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=5.706677ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=11.174083ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.092366465Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=4.3382ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=8.024989ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.092082742Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=2.354663ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=11.336394ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.090868314Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=13m0s step=1m0s duration=2.866979ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=9.411847ms subqueries=1 source=logvolhist
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.087505808Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.057104ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=8.238657ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.08706884Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=17m16.981s step=2s duration=1.258266ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=7.990781ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.085542255Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=17m16.981s step=2s duration=1.750454ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=6.086011ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.084449419Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=17m16.981s step=2s duration=5.074169ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=2.909843ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.083833339Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=12m43.019s step=2s duration=2.420503ms status=200 limit=1000 returned_lines=1 throughput=137kB total_bytes=332B queue_time=3.608173ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.083841115Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=17m16.981s step=2s duration=7.128731ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=5.489862ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.081748972Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=17m16.981s step=2s duration=5.307379ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=3.931803ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.081729011Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=12m43.019s step=2s duration=4.151178ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=6.436162ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.081563223Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.520898ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=3.646531ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.081469159Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=12m43.019s step=2s duration=3.41483ms status=200 limit=1000 returned_lines=1 throughput=3.4MB total_bytes=12kB queue_time=2.741503ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.081024881Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.758671ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=6.565367ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.080363289Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.693619ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=6.43892ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.079471449Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=12m43.019s step=2s duration=2.402257ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=6.342017ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.075654649Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=17m16.981s step=2s duration=1.974319ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=546.697µs subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.07539739Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=5.490999ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=551.102µs subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.075359548Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=17m16.981s step=2s duration=3.744026ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=513.072µs subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.075001064Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=12m43.019s step=2s duration=4.081686ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=886.041µs subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.073156581Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=3.182803ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=1.506414ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.071519076Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=17m16.981s step=2s duration=7.387402ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=99.224µs subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.07118617Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=7.767297ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=185.067µs subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.069900338Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=17m16.981s step=2s duration=2.505318ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=2.761983ms subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.069686838Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=6.085601ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=59.306µs subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.068920154Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=4.551992ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=181.365µs subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.066584879Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=17m16.981s step=2s duration=5.555288ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=23.847µs subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.066161969Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=5.240185ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=9.081µs subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.065748096Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=17m16.981s step=2s duration=5.155805ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=34.786µs subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.064944649Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=12m43.019s step=2s duration=2.838087ms status=200 limit=1000 returned_lines=1 throughput=108kB total_bytes=308B queue_time=23.674µs subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.064671897Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=3.362599ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=21.432µs subqueries=1
+
+2022-06-19T22:42:43+03:00	level=info ts=2022-06-19T19:42:43.063568645Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.112342ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=33.137µs subqueries=1
+
+2022-06-19T22:41:40+03:00	INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.619452296Z caller=metrics.go:122 component=frontend org_id=fake latency=fast query="sum by (level) (count_over_time({job=\"containerlogs\"} |= `Uvicorn`[1m]))" query_type=metric range_type=range length=1h0m0s step=1m0s duration=122.028721ms status=200 limit=1000 returned_lines=0 throughput=5.2kB total_bytes=640B queue_time=1.960806122s subqueries=3 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.61731521Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=5m0s step=1m0s duration=6.715284ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=48.331529ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.616327142Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=5m0s step=1m0s duration=6.977321ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=48.277006ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.615114741Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=5m0s step=1m0s duration=11.885485ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=45.120523ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.614684301Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=5m0s step=1m0s duration=6.405013ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=44.217282ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.613025954Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=25m0s step=1m0s duration=3.464225ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=43.847977ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.611737788Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=25m0s step=1m0s duration=9.413909ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=45.055639ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.610688974Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=5m0s step=1m0s duration=8.340319ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=43.592522ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.611143926Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=5m0s step=1m0s duration=9.471498ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=44.053175ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.610659801Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=5m0s step=1m0s duration=7.206312ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=44.145144ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.608379817Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=25m0s step=1m0s duration=11.571367ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=38.676444ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.601934985Z caller=metrics.go:122 component=frontend org_id=fake latency=fast query="{job=\"containerlogs\"} |= `Uvicorn`" query_type=filter range_type=range length=1h0m0s step=2s duration=106.255452ms status=200 limit=1000 returned_lines=2 throughput=6.0kB total_bytes=640B queue_time=1.084011695s subqueries=3
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.600963179Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=5m0s step=1m0s duration=6.801495ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=43.184602ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.592932445Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=25m26.558s step=2s duration=3.467825ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=60.419589ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.5922751Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=25m0s step=1m0s duration=1.533802ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=43.940732ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.592250878Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=5m0s step=1m0s duration=1.096024ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=48.273901ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.592139452Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=25m0s step=1m0s duration=1.611307ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=45.804612ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.591892152Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=25m0s step=1m0s duration=1.134658ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=51.435942ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.591025324Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=25m0s step=1m0s duration=619.851µs status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=51.684545ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.590445115Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=25m26.558s step=2s duration=1.380352ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=62.302929ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.590288154Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=25m26.558s step=2s duration=2.192686ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=61.648551ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.588062266Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=4m33.442s step=2s duration=8.213539ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=61.926021ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.587912707Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=25m26.558s step=2s duration=3.947319ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=60.471746ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.584902535Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=25m26.558s step=2s duration=6.542211ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=58.962769ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.585749749Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=25m0s step=1m0s duration=8.04312ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=59.086403ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.585116506Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=25m26.558s step=2s duration=6.292734ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=58.95493ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.584902563Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=25m26.558s step=2s duration=3.959008ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=58.319912ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.583950093Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=25m26.558s step=2s duration=3.953773ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=62.349452ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.582608226Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=25m26.558s step=2s duration=3.564535ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=58.950679ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.581759414Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=25m0s step=1m0s duration=14.343922ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=50.262454ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.580046706Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=25m26.558s step=2s duration=3.679682ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=58.952194ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.578764783Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=25m0s step=1m0s duration=3.899233ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=56.72712ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.576974638Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=10.122951ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=50.299347ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.576316325Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=25m0s step=1m0s duration=2.623844ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=56.820306ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.575105821Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=25m0s step=1m0s duration=7.870487ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=50.237258ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.573665253Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=9.022844ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=48.33924ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.572197646Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=25m0s step=1m0s duration=5.467101ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=49.180911ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.571102096Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=5.204442ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=48.128391ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.570066085Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=25m0s step=1m0s duration=4.058466ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=48.320311ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.569760477Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=25m26.558s step=2s duration=2.396613ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=50.522998ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.567541644Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=25m0s step=1m0s duration=3.950813ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=48.131185ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.567540824Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=2.876426ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=48.232891ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.56474368Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.950703ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=47.663163ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.563375058Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=3.367867ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=42.317149ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.561565992Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=2.727282ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=42.337755ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.561003232Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=2.149114ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=42.515816ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.559890837Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.663228ms status=200 limit=1000 returned_lines=0 throughput=200kB total_bytes=332B queue_time=41.290562ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.559447983Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=25m26.558s step=2s duration=1.585314ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=42.098505ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.555383409Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.106402ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=36.669304ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.555775537Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=1.815084ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=36.494889ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.555256567Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=25m26.558s step=2s duration=6.147895ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=34.639349ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.550567832Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=10.172622ms status=200 limit=1000 returned_lines=0 throughput=30kB total_bytes=308B queue_time=25.675554ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.550505034Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=5m0s step=1m0s duration=8.445428ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=25.53574ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.550084378Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=3.933594ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=30.408217ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.547403462Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=4.36478ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=25.111029ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.547355128Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=3.105017ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=25.133993ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.547307732Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=5m0s step=1m0s duration=4.934117ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=25.448245ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.547226512Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=25m0s step=1m0s duration=4.799454ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=27.991861ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.546964114Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=29m0s step=1m0s duration=7.073794ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=25.094142ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.546371964Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=25m26.558s step=2s duration=2.925594ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=25.102064ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.544459459Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=5m0s step=1m0s duration=1.508306ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=25.374133ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.540496703Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=5m0s step=1m0s duration=5.04953ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=23.229533ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.540106977Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=5m0s step=1m0s duration=2.194111ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=24.958649ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.537391318Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=5m0s step=1m0s duration=2.624341ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=23.241524ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.536046592Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=5.326881ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=20.958442ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.5334394Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="sum by(level)(count_over_time({job=\"containerlogs\"} |= \"Uvicorn\"[1m]))" query_type=metric range_type=range length=5m0s step=1m0s duration=2.412252ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=20.90748ms subqueries=1 source=logvolhist
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.532769522Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=25m26.558s step=2s duration=1.871232ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=20.722076ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.532559936Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.007965ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=20.947751ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.532423662Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.015055ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=21.023733ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.532382594Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=1.152087ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=21.003462ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.531978735Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=4.502978ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=18.658304ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.531567763Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.448954ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=19.871909ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.531173149Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=1.673854ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=19.819396ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.528605931Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=1.527351ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=18.385608ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.528320498Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=854.5µs status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=19.179053ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.525569381Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=11.035321ms status=200 limit=1000 returned_lines=1 throughput=30kB total_bytes=332B queue_time=1.481308ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.522952136Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=779.944µs status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=14.227719ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.52271056Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=4.713974ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=9.797961ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.521475528Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=4m33.442s step=2s duration=18.680082ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=3.349685ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.519882521Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=4m33.442s step=2s duration=15.681635ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=216.956µs subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.520701455Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=4m33.442s step=2s duration=16.565863ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=240.781µs subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.520611126Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=4m33.442s step=2s duration=16.879459ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=163.555µs subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.524264707Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=883.21µs status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=15.235657ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.521385393Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=11.745719ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=1.756974ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.52079838Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=4m33.442s step=2s duration=15.881242ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=173.862µs subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.519567413Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=8.601061ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=1.771898ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.518149224Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=25m26.558s step=2s duration=8.771128ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=1.755022ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.51527475Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=4m33.442s step=2s duration=6.486982ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=2.41725ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.506511035Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=4m33.442s step=2s duration=2.969104ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=37.908µs subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.506305765Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=4m33.442s step=2s duration=3.21939ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=2.891415ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.505766633Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=4m33.442s step=2s duration=2.929552ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=3.113283ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.505111479Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=4m33.442s step=2s duration=2.034265ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=4.731192ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.504695167Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=4m33.442s step=2s duration=1.746381ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=2.898697ms subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.501301903Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=30m0s step=2s duration=2.856861ms status=200 limit=1000 returned_lines=1 throughput=108kB total_bytes=308B queue_time=171.184µs subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.500911177Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=4m33.442s step=2s duration=3.060663ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=86.066µs subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.500715171Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=4m33.442s step=2s duration=2.566064ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=992.058µs subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.499873835Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=4m33.442s step=2s duration=1.197373ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=164.964µs subqueries=1
+
+2022-06-19T22:41:40+03:00	level=info ts=2022-06-19T18:34:33.498376639Z caller=metrics.go:122 component=querier org_id=fake latency=fast query="{job=\"containerlogs\"} |= \"Uvicorn\"" query_type=filter range_type=range length=4m33.442s step=2s duration=1.807632ms status=200 limit=1000 returned_lines=0 throughput=0B total_bytes=0B queue_time=144.883µs subqueries=1
+
