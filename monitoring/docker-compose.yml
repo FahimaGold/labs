@@ -4,6 +4,29 @@ networks:
   loki:
 
 services:
+  prometheus:
+    image: prom/prometheus
+    container_name: monitoring.prometheus
+    volumes:
+      - /etc/prometheus:/etc/prometheus
+      - /etc/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=14d'
+      - '--web.enable-lifecycle'
+      - '--storage.tsdb.wal-compression'
+      - '--storage.tsdb.max-block-duration=4h'
+      - '--storage.tsdb.wal-segment-size=60MB'
+      - '--storage.tsdb.allow-overlapping-blocks'
+      - '--query.max-samples=5000000'
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    networks:
+      - loki
   loki:
     image: grafana/loki:2.5.0
     ports:
