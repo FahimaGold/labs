@@ -26,6 +26,11 @@ services:
     restart: unless-stopped
     ports:
       - "9090:9090"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1k"
+        max-file: "3"
     networks:
       - loki
   loki:
@@ -33,6 +38,11 @@ services:
     mem_limit: 512m
     ports:
       - "3100:3100"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1k"
+        max-file: "3"
     command: -config.file=/etc/loki/local-config.yaml
     networks:
       - loki
@@ -40,6 +50,11 @@ services:
   promtail:
     image: grafana/promtail:2.5.0
     mem_limit: 512m
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1k"
+        max-file: "3"
     volumes:
       - /var/lib/docker/containers:/var/lib/docker/containers   
       - /etc/promtail/config.yml:/etc/promtail/config.yml
@@ -52,6 +67,11 @@ services:
     mem_limit: 512m
     ports:
       - "3000:3000"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1k"
+        max-file: "3"
     networks:
       - loki
   app:
@@ -59,5 +79,10 @@ services:
     mem_limit: 512m
     ports:
       - "80:80"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1k"
+        max-file: "3"
     networks:
       - loki
