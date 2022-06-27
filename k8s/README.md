@@ -29,4 +29,29 @@ mac@macs-MacBook-Pro labs %
 
 ![kubectl get pods svc](../images/yml_get_pods_svc.png)
 
+- Output of `minikube service --all`:
+
+mac@macs-MacBook-Pro labs % minikube service --all
+|-----------|------------|-------------|--------------|
+| NAMESPACE |    NAME    | TARGET PORT |     URL      |
+|-----------|------------|-------------|--------------|
+| default   | kubernetes |             | No node port |
+|-----------|------------|-------------|--------------|
+😿  service default/kubernetes has no node port
+|-----------|------------|-------------|-----------------------------|
+| NAMESPACE |    NAME    | TARGET PORT |             URL             |
+|-----------|------------|-------------|-----------------------------|
+| default   | my-service |          80 | http://192.168.59.102:31019 |
+|-----------|------------|-------------|-----------------------------|
+|-----------|-----------------------|-------------|-----------------------------|
+| NAMESPACE |         NAME          | TARGET PORT |             URL             |
+|-----------|-----------------------|-------------|-----------------------------|
+| default   | python-app-deployment |          80 | http://192.168.59.102:32141 |
+|-----------|-----------------------|-------------|-----------------------------|
+
+![ minikuve service --all](../images/yml_minikube_service_all.png)
+
+- Screenshot of url from the browser: 
+
+![from browser](../images//minikube_from_browser.png)
 
