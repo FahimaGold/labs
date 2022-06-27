@@ -19,3 +19,4 @@ spec:
         image: fahima2019/lab2:lab2
         ports:
         - containerPort: 80
+          name: http-web-svc
