@@ -4,16 +4,57 @@ networks:
   loki:
 
 services:
+  prometheus:
+    image: prom/prometheus
+    mem_limit: 512m
+    container_name: monitoring.prometheus
+    volumes:
+      - /etc/prometheus:/etc/prometheus
+      - /etc/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/etc/prometheus/console_libraries'
+      - '--web.console.templates=/etc/prometheus/consoles'
+      - '--storage.tsdb.retention.time=14d'
+      - '--web.enable-lifecycle'
+      - '--storage.tsdb.wal-compression'
+      - '--storage.tsdb.max-block-duration=4h'
+      - '--storage.tsdb.wal-segment-size=60MB'
+      - '--storage.tsdb.allow-overlapping-blocks'
+      - '--query.max-samples=5000000'
+    restart: unless-stopped
+    ports:
+      - "9090:9090"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1k"
+        max-file: "3"
+    networks:
+      - loki
   loki:
     image: grafana/loki:2.5.0
+    mem_limit: 512m
     ports:
       - "3100:3100"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1k"
+        max-file: "3"
     command: -config.file=/etc/loki/local-config.yaml
     networks:
       - loki
 
   promtail:
     image: grafana/promtail:2.5.0
+    mem_limit: 512m
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1k"
+        max-file: "3"
     volumes:
       - /var/lib/docker/containers:/var/lib/docker/containers   
       - /etc/promtail/config.yml:/etc/promtail/config.yml
@@ -23,13 +64,25 @@ services:
 
   grafana:
     image: grafana/grafana:latest
+    mem_limit: 512m
     ports:
       - "3000:3000"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1k"
+        max-file: "3"
     networks:
       - loki
   app:
     image: fahima2019/lab2:lab2
+    mem_limit: 512m
     ports:
       - "80:80"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "1k"
+        max-file: "3"
     networks:
       - loki
