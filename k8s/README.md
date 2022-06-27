@@ -49,9 +49,18 @@ mac@macs-MacBook-Pro labs % minikube service --all
 | default   | python-app-deployment |          80 | http://192.168.59.102:32141 |
 |-----------|-----------------------|-------------|-----------------------------|
 
-![ minikuve service --all](../images/yml_minikube_service_all.png)
+![ minikube service --all](../images/yml_minikube_service_all.png)
 
 - Screenshot of url from the browser: 
 
 ![from browser](../images//minikube_from_browser.png)
+
+# Helm
+
+Output of `kubectl get pods,svc`:
+
+![minikube kubectl](../images/helm_kubectl_get_pods_svc.png)
+![minikube dashabord 1](../images/minikube_dashabord_1.png)
+![minikube dashabord 2](../images/minikube_dashabord_2.png)
+
 
