@@ -55,3 +55,13 @@ mac@macs-MacBook-Pro labs % minikube service --all
 
 ![from browser](../images//minikube_from_browser.png)
 
+# Helm
+
+Output of `kubectl get pods,svc`:
+
+![helm](../images/helm_kubectl_get_pods_svc.png)
+![minikube dashboard](../images/minikube_dashabord_1.png)
+![minikube dashboard](../images/minikube_dashabord_2.png)
+
+
+
