@@ -17,6 +17,14 @@ spec:
       containers:
       - name: python-app
         image: fahima2019/lab2:lab2
+        volumeMounts:
+          - name: config-volume
+            mountPath: "/app/config.yaml"
+            subPath: config.yaml
+      volumes:
+        - name: config-volume
+          configMap:
+            name: sherlock-config
         ports:
         - containerPort: 80
           name: http-web-svc
