@@ -1,2 +1,4 @@
 terraform_az/.terraform/
 +./
+password.txt
+username.txt
