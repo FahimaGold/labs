@@ -32,6 +32,10 @@ spec:
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          volumeMounts:
+          - name: config-volume
+            mountPath: /files/config.json
+            subPath: config.json 
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
           - name: MY_PASSWORD
@@ -50,7 +54,7 @@ spec:
           readinessProbe:
             httpGet:
               path: /
-              port: http
+              port: http 
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
@@ -65,3 +69,7 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      volumes:
+         - name: config-volume
+           configMap:
+             name: sherlock-config 

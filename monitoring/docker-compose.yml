@@ -76,6 +76,8 @@ services:
       - loki
   app:
     image: fahima2019/lab2:lab2
+    volumes:
+      - /Users/mac/Documents/labs/out.txt:/etc/files/ 
     mem_limit: 512m
     ports:
       - "80:80"
