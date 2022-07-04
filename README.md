@@ -1,6 +1,6 @@
-# About this app
+# About this app -Update-
 
-This is a simple fastapi app that displays current time in Moscow. In order to use it, fter you clone it from github, follow the following steps:
+This is a simple fastapi app that displays current time in Moscow. When you hit the `/`, the current time will be redirected to a file. If you want to see the time on the browser, hit the endpoint `/visit`. In order to use it, fter you clone it from github, follow the following steps:
 
 - Run `pip3 install fastapi` in order to install fastapi
 - Run `pip3 install pytz` in order to install the package that helps us get timezone.
@@ -8,7 +8,9 @@ This is a simple fastapi app that displays current time in Moscow. In order to u
 
 # Running the app
 
-From your parent directory of the `app_python`, run the following command to launch the app: `uvicorn app_python.current_time:app --reload` . The app will be then accessible through your browser at http://127.0.0.1:8000/.
+From your parent directory of the `app_python`, run the following command to launch the app: `uvicorn app_python.current_time:app --reload` . The app will be then accessible through your browser at http://127.0.0.1:8000/ (output redirected to the file `out.txt`).
+
+If you want to see the time on the browser, you can access it via http://127.0.0.1:8000/visit
 
 # Testing the app
 
