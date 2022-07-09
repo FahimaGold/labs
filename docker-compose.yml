@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  app_python:
+    image: "fahima2019/lab2"
+    ports:
+      - "80:80"

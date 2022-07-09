@@ -4,9 +4,9 @@
     source: pull
 - name: run container
   docker_container:
-    name: pythonapp
+    name: python_app
     image: fahima2019/lab2
-    state: present
+    state: started
     ports:
      - "80:80"
     
