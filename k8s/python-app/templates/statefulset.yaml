@@ -1,11 +1,12 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: {{ include "python-app.fullname" . }}
   labels:
     {{- include "python-app.labels" . | nindent 4 }}
 spec:
   {{- if not .Values.autoscaling.enabled }}
+  serviceName: {{ include "python-app.fullname" . }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
   selector:
@@ -73,3 +74,11 @@ spec:
          - name: config-volume
            configMap:
              name: sherlock-config 
+  volumeClaimTemplates:
+  - metadata:
+      name: {{ .Values.statefulSet.name }}
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: {{ .Values.statefulSet.storageSize }}
