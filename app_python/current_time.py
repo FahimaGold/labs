@@ -16,7 +16,7 @@ def get_current_time():
 @app.get("/")
 def read_root():
     # writing to file when root endpoint is hit
-    with open('out.txt', 'w') as f:
+    with open('out.txt', 'a') as f:
        print( get_current_time(), file=f)  
     return "output redirected to a file..."
 
