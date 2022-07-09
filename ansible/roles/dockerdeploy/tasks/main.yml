@@ -1,0 +1,12 @@
+- name: pull an image
+  docker_image:
+    name: fahima2019/lab2
+    source: pull
+- name: run container
+  docker_container:
+    name: pythonapp
+    image: fahima2019/lab2
+    state: present
+    ports:
+     - "80:80"
+    

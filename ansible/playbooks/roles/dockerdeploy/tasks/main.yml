@@ -1,4 +1,0 @@
-- name: pull an image
-  docker_image:
-    name: fahima2019/lab2
-    source: pull

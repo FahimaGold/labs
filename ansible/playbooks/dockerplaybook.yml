@@ -1,5 +1,6 @@
 - hosts: all
   roles:
-    - geerlingguy.docker
-    - dockerdeploy
+    - role: "../roles/geerlingguy.docker"
+    - role: "../roles/dockerdeploy" 
+    
   become: yes
