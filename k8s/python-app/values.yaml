@@ -83,3 +83,6 @@ podManagementPolicy: "Parallel"
 statefulSet:
   name: visits
   storageSize: 1Gi
+prometheus:
+  prometheusSpec:
+    shards: 2
